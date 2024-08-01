@@ -4,8 +4,10 @@
   font-size: 1.8rem;
   padding: 15px;
 }
-.head div {
+.head p {
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 .fabar {
   color: #777777;

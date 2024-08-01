@@ -7,15 +7,19 @@ function Header() {
   return (
     <>
       <div className={styles.head}>
-        <div>Shortly</div>
+        <p>Shortly</p>
         <FaBars className={styles.fabar} />
       </div>
       <div>
         <div>
-          <img src={illustration} alt="illustration image" />
+          <img src={illustration} alt="illustration " />
         </div>
         <div>
-          <h1>More than just shorter links</h1>
+          <h1>
+            More than just
+            <br />
+            shorter links
+          </h1>
           <p>
             Build your brand's recognition and get detailed insights on how your
             links are performing.
