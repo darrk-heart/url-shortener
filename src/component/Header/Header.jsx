@@ -10,11 +10,11 @@ function Header() {
         <p>Shortly</p>
         <FaBars className={styles.fabar} />
       </div>
-      <div>
-        <div>
+      <div className={styles.content}>
+        <div className={styles.illustration}>
           <img src={illustration} alt="illustration " />
         </div>
-        <div>
+        <div className={styles.more}>
           <h1>
             More than just
             <br />

@@ -12,3 +12,16 @@
 .fabar {
   color: #777777;
 }
+.content {
+  text-align: center;
+}
+.illustration {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.illustration img {
+  object-fit: cover;
+  display: block;
+  width: 130%;
+}
