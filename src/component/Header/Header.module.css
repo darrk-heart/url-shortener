@@ -1,0 +1,12 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 15px;
+}
+.head div {
+  font-weight: 700;
+}
+.fabar {
+  color: #777777;
+}
