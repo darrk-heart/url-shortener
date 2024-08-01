@@ -24,7 +24,7 @@ function Header() {
             Build your brand's recognition and get detailed insights on how your
             links are performing.
           </p>
-          <p>Get Started</p>
+          <span className={styles.started}>Get Started</span>
         </div>
       </div>
     </>

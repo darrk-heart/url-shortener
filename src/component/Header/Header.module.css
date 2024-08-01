@@ -25,3 +25,21 @@
   display: block;
   width: 130%;
 }
+.more h1 {
+  font-weight: 800;
+  color: #333333;
+}
+.more p {
+  font-size: 1.15rem;
+  padding: 0 10px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.started {
+  background-color: hsl(180, 66%, 49%);
+  padding: 15px 45px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
