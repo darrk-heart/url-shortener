@@ -10,6 +10,20 @@ function Header() {
         <p>Shortly</p>
         <FaBars className={styles.fabar} />
       </div>
+      <div className={styles.tablethead}>
+        <div>
+          <p>Shortly</p>
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+        </div>
+        <div>
+          <p>Login</p>
+          <p>Sign Up</p>
+        </div>
+      </div>
       <div className={styles.content}>
         <div className={styles.illustration}>
           <img src={illustration} alt="illustration " />

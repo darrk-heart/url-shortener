@@ -43,3 +43,17 @@
   font-weight: 600;
   font-size: 1.4rem;
 }
+ul {
+  list-style-type: none;
+  display: flex;
+}
+.tablethead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.tablethead div {
+  display: flex;
+  align-items: center;
+}
