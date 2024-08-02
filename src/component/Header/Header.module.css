@@ -14,16 +14,23 @@
 }
 .content {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .illustration {
   overflow: hidden;
   position: relative;
   width: 100%;
+  order: 1;
 }
 .illustration img {
   object-fit: cover;
   display: block;
   width: 130%;
+}
+.more {
+  order: 2;
 }
 .more h1 {
   font-weight: 800;
@@ -54,7 +61,7 @@ li {
   color: #444242;
 }
 .tablethead {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 30px 100px;
@@ -79,5 +86,27 @@ li {
 @media (min-width: 768px) {
   .head {
     display: none;
+  }
+  .tablethead {
+    display: flex;
+  }
+  .content {
+    margin-top: 3%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .illustration {
+    order: 2;
+    width: 50%;
+  }
+  .illustration img {
+    width: 100%;
+  }
+  .more {
+    width: 50%;
+    order: 1;
+    text-align: left;
+    padding-left: 100px;
   }
 }
