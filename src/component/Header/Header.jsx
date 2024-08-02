@@ -12,7 +12,7 @@ function Header() {
       </div>
       <div className={styles.tablethead}>
         <div>
-          <p>Shortly</p>
+          <p className={styles.shortly}>Shortly</p>
           <ul>
             <li>Features</li>
             <li>Pricing</li>
@@ -20,8 +20,10 @@ function Header() {
           </ul>
         </div>
         <div>
-          <p>Login</p>
-          <p>Sign Up</p>
+          <ul>
+            <li>Login</li>
+            <li className={styles.sign}>Sign Up</li>
+          </ul>
         </div>
       </div>
       <div className={styles.content}>

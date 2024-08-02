@@ -46,6 +46,12 @@
 ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
+}
+li {
+  margin: 0 20px;
+  font-weight: 600;
+  color: #444242;
 }
 .tablethead {
   display: flex;
@@ -56,6 +62,18 @@ ul {
 .tablethead div {
   display: flex;
   align-items: center;
+}
+.shortly {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+.sign {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  padding: 5px 15px;
+  border-radius: 30px;
 }
 
 @media (min-width: 768px) {
