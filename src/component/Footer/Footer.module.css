@@ -6,9 +6,16 @@
 .records,
 .customize {
   background-color: white;
+  width: 85%;
+  border-radius: 5px;
 }
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+img {
+  background-color: hsl(257, 27%, 26%);
+  padding: 10px;
+  border-radius: 50%;
 }
