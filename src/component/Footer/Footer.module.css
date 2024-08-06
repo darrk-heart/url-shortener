@@ -1,5 +1,5 @@
 .footer {
-  background-color: hsl(0, 0%, 75%);
+  background-color: #f0f1f6;
   text-align: center;
 }
 .brands,
@@ -7,15 +7,29 @@
 .customize {
   background-color: white;
   width: 85%;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-img {
+.imge {
   background-color: hsl(257, 27%, 26%);
   padding: 10px;
   border-radius: 50%;
+}
+.foot {
+  padding-top: 10%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.foot p {
+  width: 80%;
+  font-weight: 600;
+  color: #7b7878;
+}
+.foot h2 {
+  margin: 0;
 }

@@ -7,7 +7,7 @@ import customize from "../../assets/icon-fully-customizable.svg";
 function Footer() {
   return (
     <div className={styles.footer}>
-      <div>
+      <div className={styles.foot}>
         <h2>Advanced Statistics</h2>
         <p>
           Track how your links are performing accross the web with our advanced
@@ -16,7 +16,11 @@ function Footer() {
       </div>
       <div className={styles.container}>
         <div className={styles.brands}>
-          <img src={brand} alt="brands recognition logo" />
+          <img
+            src={brand}
+            alt="brands recognition logo"
+            className={styles.imge}
+          />
           <h3>Brand Recognition</h3>
           <p>
             Boost your brand recognition with each click. Generic links don't
@@ -24,7 +28,11 @@ function Footer() {
           </p>
         </div>
         <div className={styles.records}>
-          <img src={details} alt="detail records logo" />
+          <img
+            src={details}
+            alt="detail records logo"
+            className={styles.imge}
+          />
           <h3>Detailed Records</h3>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -32,7 +40,13 @@ function Footer() {
           </p>
         </div>
         <div className={styles.customize}>
-          <img src={customize} alt="fully customizable" />
+          <div>
+            <img
+              src={customize}
+              alt="fully customizable"
+              className={styles.imge}
+            />
+          </div>
           <h3>Fully Customizable</h3>
           <p>
             Improve brand awareness and content discovery through customizable
