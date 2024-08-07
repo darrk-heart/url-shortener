@@ -27,6 +27,7 @@
 .shortly {
   background-color: hsl(260, 8%, 14%);
   color: white;
+  padding-top: 30px;
 }
 .shortly div p {
   font-size: 0.9rem;
