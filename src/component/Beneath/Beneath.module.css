@@ -1,0 +1,26 @@
+.boost {
+  background-image: url("../../assets/bg-boost-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-color: hsl(257, 27%, 26%);
+}
+.beneath {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.boost div {
+  margin: 80px 0;
+}
+.boost div h2 {
+  color: white;
+  font-weight: 500;
+}
+.boost div span {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+}

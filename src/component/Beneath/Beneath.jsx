@@ -3,13 +3,16 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import styles from "./Beneath.module.css";
 
 function Beneath() {
   return (
-    <>
-      <div>
-        <h2>Boost your links today</h2>
-        <span>Get Started</span>
+    <div className={styles.beneath}>
+      <div className={styles.boost}>
+        <div>
+          <h2>Boost your links today</h2>
+          <span>Get Started</span>
+        </div>
       </div>
       <div>
         Shortly
@@ -39,7 +42,7 @@ function Beneath() {
           <BsInstagram />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
