@@ -29,11 +29,16 @@
   flex-direction: column;
   margin-bottom: 15%;
 }
-.foot p {
+.foot p,
+.container div p {
   width: 80%;
   font-weight: 600;
   color: #7b7878;
 }
 .foot h2 {
   margin: 0;
+}
+.container div h3 {
+  margin: 0;
+  padding: 0;
 }
