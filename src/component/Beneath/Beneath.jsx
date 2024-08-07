@@ -14,8 +14,8 @@ function Beneath() {
           <span>Get Started</span>
         </div>
       </div>
-      <div>
-        Shortly
+      <div className={styles.shortly}>
+        <h1>Shortly</h1>
         <div>
           <h4>Features</h4>
           <p>Link Shortening</p>

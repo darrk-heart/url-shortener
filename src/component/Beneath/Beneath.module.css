@@ -24,3 +24,7 @@
   border-radius: 20px;
   font-weight: 600;
 }
+.shortly {
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+}
