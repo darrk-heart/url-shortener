@@ -28,3 +28,12 @@
   background-color: hsl(260, 8%, 14%);
   color: white;
 }
+.shortly div p {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin: 10px;
+  font-weight: 500;
+}
+.shortly div h4 {
+  margin: 40px 0 20px 0;
+}
