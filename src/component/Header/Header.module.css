@@ -59,7 +59,11 @@ ul {
 li {
   margin: 0 20px;
   font-weight: 600;
-  color: #444242;
+  color: #747272;
+}
+li:hover {
+  cursor: pointer;
+  color: black;
 }
 .tablethead {
   display: none;
@@ -76,12 +80,19 @@ li {
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  cursor: default;
 }
 .sign {
   color: white;
   background-color: hsl(180, 66%, 49%);
   padding: 5px 15px;
   border-radius: 30px;
+}
+.started:hover,
+.sign:hover {
+  color: white;
+  background-color: hsl(180, 58%, 71%);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

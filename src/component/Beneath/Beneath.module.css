@@ -23,11 +23,16 @@
   padding: 10px 30px;
   border-radius: 20px;
   font-weight: 600;
+  cursor: pointer;
+}
+.boost div span:hover {
+  background-color: hsl(180, 58%, 71%);
 }
 .shortly {
   background-color: hsl(260, 8%, 14%);
   color: white;
   padding-top: 30px;
+  cursor: default;
 }
 .shortly div p {
   font-size: 0.9rem;
@@ -35,8 +40,13 @@
   margin: 10px;
   font-weight: 500;
 }
+.shortly div p:hover {
+  cursor: pointer;
+  color: hsl(180, 66%, 49%);
+}
 .shortly div h4 {
   margin: 40px 0 20px 0;
+  cursor: default;
 }
 .icons {
   margin: 50px 0;
@@ -44,6 +54,10 @@
 .icon {
   font-size: 1.7rem;
   padding: 0 10px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: hsl(180, 66%, 49%);
 }
 @media (min-width: 768px) {
   .boost {
