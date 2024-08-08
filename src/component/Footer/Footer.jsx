@@ -40,13 +40,11 @@ function Footer() {
           </p>
         </div>
         <div className={styles.customize}>
-          <div>
-            <img
-              src={customize}
-              alt="fully customizable"
-              className={styles.imge}
-            />
-          </div>
+          <img
+            src={customize}
+            alt="fully customizable"
+            className={styles.imge}
+          />
           <h3>Fully Customizable</h3>
           <p>
             Improve brand awareness and content discovery through customizable

@@ -10,6 +10,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 20%;
+  /* height: ; */
 }
 .container {
   display: flex;
@@ -40,6 +41,6 @@
   margin: 0;
 }
 .container div h3 {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }

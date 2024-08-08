@@ -35,11 +35,11 @@ function Beneath() {
           <p>Careers</p>
           <p>Contact</p>
         </div>
-        <div>
-          <FaFacebook />
-          <FaTwitter />
-          <FaPinterest />
-          <BsInstagram />
+        <div className={styles.icons}>
+          <FaFacebook className={styles.icon} />
+          <FaTwitter className={styles.icon} />
+          <FaPinterest className={styles.icon} />
+          <BsInstagram className={styles.icon} />
         </div>
       </div>
     </div>
