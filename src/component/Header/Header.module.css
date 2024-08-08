@@ -65,7 +65,7 @@ li {
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 50px 150px;
 }
 .tablethead div {
   display: flex;
@@ -109,7 +109,7 @@ li {
     width: 50%;
     order: 1;
     text-align: left;
-    padding-left: 100px;
+    padding-left: 150px;
   }
   .more h1 {
     font-size: 3.5rem;
