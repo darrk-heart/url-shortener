@@ -45,3 +45,15 @@
   font-size: 1.7rem;
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .boost {
+    background-image: url(../../assets//bg-boost-desktop.svg);
+  }
+  .boost div h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .boost div span {
+    border-radius: 25px;
+  }
+}
