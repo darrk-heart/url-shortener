@@ -44,3 +44,19 @@
   margin: 20px 0 0 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 0 100px;
+  }
+  .foot {
+    margin-bottom: 3%;
+  }
+
+  .foot h2 {
+    font-size: 2.2rem;
+  }
+  .foot p {
+    width: 25%;
+  }
+}
