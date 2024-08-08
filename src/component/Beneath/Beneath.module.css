@@ -56,4 +56,13 @@
   .boost div span {
     border-radius: 25px;
   }
+  .shortly {
+    padding: 0 150px 70px 150px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .shortly div p {
+    margin: 10px 0;
+  }
 }
