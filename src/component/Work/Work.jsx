@@ -5,8 +5,10 @@ function Work() {
   return (
     <div className={styles.main}>
       <div className={styles.display}>
-        <div>Hello World</div>
-        <div>Shorten It!</div>
+        <div className={styles.text}>
+          <input type="text" placeholder="Shorten a link here..." />
+        </div>
+        <div className={styles.label}>Shorten It!</div>
       </div>
     </div>
   );
