@@ -1,0 +1,15 @@
+.main {
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.display {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(../../assets//bg-shorten-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
