@@ -17,10 +17,32 @@
 .text {
   background-color: white;
   width: 85%;
-  height: 35px;
+  height: 40px;
+  margin: 20px 0 10px 0;
+  border-radius: 5px;
+}
+.text input {
+  width: 94%;
+  height: 22px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  border: none;
+  font-weight: 700;
+}
+.text input:focus {
+  outline: none;
+}
+.text input::placeholder {
+  color: rgb(115, 109, 109);
 }
 .label {
   width: 85%;
   background-color: hsl(180, 66%, 49%);
   color: white;
+  margin-bottom: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
 }
