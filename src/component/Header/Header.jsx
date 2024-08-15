@@ -2,6 +2,7 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "./Header.module.css";
 import illustration from "../../assets/illustration-working.svg";
+import Hamburger from "../Hamburger/Hamburger";
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
         <p>Shortly</p>
         <FaBars className={styles.fabar} />
       </div>
+      <Hamburger />
       <div className={styles.tablethead}>
         <div>
           <p className={styles.shortly}>Shortly</p>
