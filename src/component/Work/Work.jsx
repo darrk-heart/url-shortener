@@ -4,12 +4,16 @@ import styles from "./Work.module.css";
 function Work() {
   const [inputValue, setInputValue] = useState("");
   const [hasError, setHasError] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
   const handleShortClick = () => {
     if (inputValue === "") {
       setHasError(true);
+      setShowResult(false);
     } else {
       setHasError(false);
+      setShowResult(true);
     }
   };
 
@@ -18,6 +22,13 @@ function Work() {
     if (e.target.value != "") {
       setHasError(false);
     }
+  };
+
+  const handleCopyClick = () => {
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 700);
   };
 
   return (
@@ -49,7 +60,15 @@ function Work() {
         </div>
         <div className={styles.resultDisplay}>
           <span>result</span>
-          <div className={styles.copy}>Copy</div>
+          <div
+            onClick={handleCopyClick}
+            className={styles.copy}
+            style={{
+              backgroundColor: isCopied ? "#3a3053" : "hsl(180, 66%, 49%)",
+            }}
+          >
+            {isCopied ? "Copied!" : "Copy"}
+          </div>
         </div>
       </div>
     </div>

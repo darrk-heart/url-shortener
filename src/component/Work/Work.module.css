@@ -75,10 +75,10 @@
 .resultDisplay span,
 .inputDisplay span {
   padding-left: 20px;
+  font-weight: 600;
 }
 .copy {
   margin-bottom: 15px;
-  background-color: hsl(180, 66%, 49%);
   width: 90%;
   margin-left: 17px;
   height: 35px;
@@ -88,7 +88,9 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 .resultDisplay span {
   padding-top: 5px;
+  color: hsl(180, 66%, 49%);
 }
