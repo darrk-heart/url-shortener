@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 .text {
   background-color: white;
@@ -53,4 +54,41 @@
   font-style: italic;
   margin-left: -60%;
   display: none;
+}
+.resultDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 90px;
+  justify-content: space-between;
+}
+.result {
+  background-color: white;
+  border-radius: 7px;
+}
+.inputDisplay {
+  border-bottom: 2px solid rgb(205, 203, 203);
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+.resultDisplay span,
+.inputDisplay span {
+  padding-left: 20px;
+}
+.copy {
+  margin-bottom: 15px;
+  background-color: hsl(180, 66%, 49%);
+  width: 90%;
+  margin-left: 17px;
+  height: 35px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.resultDisplay span {
+  padding-top: 5px;
 }

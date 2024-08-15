@@ -43,6 +43,15 @@ function Work() {
           Shorten It!
         </div>
       </div>
+      <div className={styles.result}>
+        <div className={styles.inputDisplay}>
+          <span>input</span>
+        </div>
+        <div className={styles.resultDisplay}>
+          <span>result</span>
+          <div className={styles.copy}>Copy</div>
+        </div>
+      </div>
     </div>
   );
 }
