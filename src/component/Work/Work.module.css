@@ -65,6 +65,7 @@
 .result {
   background-color: white;
   border-radius: 7px;
+  margin-bottom: 20px;
 }
 .inputDisplay {
   border-bottom: 2px solid rgb(205, 203, 203);
@@ -72,8 +73,7 @@
   align-items: center;
   display: flex;
 }
-.resultDisplay span,
-.inputDisplay span {
+.resultDisplay span {
   padding-left: 20px;
   font-weight: 600;
 }
@@ -93,4 +93,12 @@
 .resultDisplay span {
   padding-top: 5px;
   color: hsl(180, 66%, 49%);
+}
+.inputDisplay span {
+  width: 89%;
+  margin-left: 18px;
+  text-align: left;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

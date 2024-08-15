@@ -4,30 +4,37 @@ import styles from "./Work.module.css";
 function Work() {
   const [inputValue, setInputValue] = useState("");
   const [hasError, setHasError] = useState(false);
-  const [isCopied, setIsCopied] = useState(false);
-  const [showResult, setShowResult] = useState(false);
+  const [results, setResults] = useState([]);
 
   const handleShortClick = () => {
     if (inputValue === "") {
       setHasError(true);
-      setShowResult(false);
     } else {
       setHasError(false);
-      setShowResult(true);
+      setResults([...results, { text: inputValue, isCopied: false }]);
+      setInputValue("");
     }
   };
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    if (e.target.value != "") {
+    if (e.target.value !== "") {
       setHasError(false);
     }
   };
 
-  const handleCopyClick = () => {
-    setIsCopied(true);
+  const handleCopyClick = (index) => {
+    setResults(
+      results.map((result, i) =>
+        i === index ? { ...result, isCopied: true } : result
+      )
+    );
     setTimeout(() => {
-      setIsCopied(false);
+      setResults(
+        results.map((result, i) =>
+          i === index ? { ...result, isCopied: false } : result
+        )
+      );
     }, 700);
   };
 
@@ -40,6 +47,7 @@ function Work() {
         >
           <input
             type="text"
+            value={inputValue}
             placeholder="Shorten a link here..."
             onChange={handleInputChange}
           />
@@ -54,23 +62,27 @@ function Work() {
           Shorten It!
         </div>
       </div>
-      <div className={styles.result}>
-        <div className={styles.inputDisplay}>
-          <span>input</span>
-        </div>
-        <div className={styles.resultDisplay}>
-          <span>result</span>
-          <div
-            onClick={handleCopyClick}
-            className={styles.copy}
-            style={{
-              backgroundColor: isCopied ? "#3a3053" : "hsl(180, 66%, 49%)",
-            }}
-          >
-            {isCopied ? "Copied!" : "Copy"}
+      {results.map((result, index) => (
+        <div key={index} className={styles.result}>
+          <div className={styles.inputDisplay}>
+            <span>{result.text}</span>
+          </div>
+          <div className={styles.resultDisplay}>
+            <span>result</span>
+            <div
+              onClick={() => handleCopyClick(index)}
+              className={styles.copy}
+              style={{
+                backgroundColor: result.isCopied
+                  ? "#3a3053"
+                  : "hsl(180, 66%, 49%)",
+              }}
+            >
+              {result.isCopied ? "Copied!" : "Copy"}
+            </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
