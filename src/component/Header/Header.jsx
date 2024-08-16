@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "./Header.module.css";
 import illustration from "../../assets/illustration-working.svg";
 import Hamburger from "../Hamburger/Hamburger";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <div className={styles.head}>
         <p>Shortly</p>
-        <FaBars className={styles.fabar} />
+        <FaBars onClick={toggleMenu} className={styles.fabar} />
       </div>
-      <Hamburger />
+      { isMenuOpen && (<Hamburger />)}
       <div className={styles.tablethead}>
         <div>
           <p className={styles.shortly}>Shortly</p>

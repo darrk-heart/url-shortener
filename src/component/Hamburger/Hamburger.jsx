@@ -40,7 +40,7 @@ function Hamburger() {
           justifyContent: "space-between",
           padding: "25px 0",
           fontWeight: "600",
-          height: "60px",
+          height: "65px",
         }}
       >
         <span>Login</span>
@@ -51,8 +51,9 @@ function Hamburger() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-around",
-            borderRadius: "6px",
-            height: "35px",
+            borderRadius: "20px",
+            height: "40px",
+            marginTop: "10px",
           }}
         >
           Sign Up
