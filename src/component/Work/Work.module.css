@@ -47,6 +47,7 @@
   justify-content: space-around;
   border-radius: 5px;
   font-weight: 600;
+  cursor: pointer;
 }
 .error {
   color: red;
@@ -101,4 +102,24 @@
   font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .display {
+    background-image: url(../../assets//bg-shorten-desktop.svg);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 60px;
+  }
+  .text {
+    width: 76%;
+    height: 40px;
+    margin: 0;
+  }
+  .label {
+    width: 20%;
+    margin: 0px;
+    height: 40px;
+    padding: 2px;
+  }
 }
