@@ -109,7 +109,7 @@
     background-image: url(../../assets//bg-shorten-desktop.svg);
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 60px;
+    padding: 30px 50px;
   }
   .text {
     width: 76%;
@@ -121,5 +121,35 @@
     margin: 0px;
     height: 40px;
     padding: 2px;
+  }
+  .result {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .resultDisplay {
+    flex-direction: row;
+    align-items: center;
+    height: 0px;
+    justify-content: space-between;
+    padding: 30px;
+    width: 20%;
+  }
+
+  .inputDisplay {
+    border-bottom: 0;
+    width: 50%;
+  }
+  .copy {
+    margin-bottom: 0;
+    width: 80px;
+    margin-left: 0;
+    height: 35px;
+    border-radius: 4px;
+  }
+  .resultDisplay span {
+    padding-top: 0;
   }
 }
