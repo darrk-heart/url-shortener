@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import styles from "./Work.module.css";
 
 function Work() {
@@ -6,12 +7,27 @@ function Work() {
   const [hasError, setHasError] = useState(false);
   const [results, setResults] = useState([]);
 
-  const handleShortClick = () => {
+  const handleShortClick = async () => {
     if (inputValue === "") {
       setHasError(true);
     } else {
       setHasError(false);
-      setResults([...results, { text: inputValue, isCopied: false }]);
+      try {
+        const response = await axios.post(
+          "https://cleanuri.com/api/v1/shorten",
+          new URLSearchParams({
+            url: inputValue,
+          })
+        );
+        const shortUrl = response.data.result_url;
+
+        setResults([
+          ...results,
+          { text: inputValue, shortUrl: shortUrl, isCopied: false },
+        ]);
+      } catch (error) {
+        console.error("Error shortening the URL:", error);
+      }
       setInputValue("");
     }
   };
@@ -24,6 +40,7 @@ function Work() {
   };
 
   const handleCopyClick = (index) => {
+    navigator.clipboard.writeText(results[index].shortUrl);
     setResults(
       results.map((result, i) =>
         i === index ? { ...result, isCopied: true } : result
@@ -69,7 +86,7 @@ function Work() {
             <span>{result.text}</span>
           </div>
           <div className={styles.resultDisplay}>
-            <span>result</span>
+            <span>{result.shortUrl}</span>
             <div
               onClick={() => handleCopyClick(index)}
               className={styles.copy}
