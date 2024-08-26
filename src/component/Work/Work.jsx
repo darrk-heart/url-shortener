@@ -14,7 +14,7 @@ function Work() {
       setHasError(false);
       try {
         const response = await axios.post(
-          "/api/v1/shorten",
+          "/api/shorten", 
           new URLSearchParams({
             url: inputValue,
           })
