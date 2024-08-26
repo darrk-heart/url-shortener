@@ -51,7 +51,7 @@ function Hamburger() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-around",
-            borderRadius: "20px",
+            borderRadius: "8px",
             height: "40px",
             marginTop: "10px",
           }}
