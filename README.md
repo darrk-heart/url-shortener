@@ -22,5 +22,5 @@ This project is licensed under [MIT LICENSE](LICENSE).
 
 ## Contributions
 
-Having a little CORPS policy issue, my localhost runnign alright but hosted urls wont generate
+Having a little CORPS policy issue, my localhost running alright but hosted urls wont generate
 Hop on to contribute!
